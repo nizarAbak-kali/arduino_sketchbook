@@ -1,6 +1,6 @@
 #include <ax12.h>
 
-AX12 moteur(3); // Adapter l'adresse.
+AX12 moteur(1); // Adapter l'adresse.
 
 void setup()
 {
@@ -30,5 +30,5 @@ void loop()
 
 byte angle(AX12 ax, int a)
 {
-   return ax.writeInfo(GOAL_POSITION, map(a, -150, 150, 0, 1023));
+   return ax.writeInfo(GOAL_POSITION, map(a ,-150, 150, 0, 1023));
 }

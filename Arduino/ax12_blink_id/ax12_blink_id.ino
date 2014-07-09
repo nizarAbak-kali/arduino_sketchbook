@@ -17,6 +17,7 @@ void setup()
 
 void loop()
 {
+    //0 avant
    AX12 ax(0); // We will use only one instance for all servos.
    
    boolean id_zero_active = (ax.writeInfo(AX_LED, 0) == 0); // Turn off the LED for ID 0 and check the success. Variable unused.
